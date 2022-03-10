@@ -1,4 +1,4 @@
-<img src="Designs/Logo1_Colored.png" width="512">
+<img src="Designs/Logo1_Colored.png" width="300">
 
 # TimeLine
 Saving time by cutting lines - A prototype app / concept developed for Techathon 2022
