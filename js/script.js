@@ -52,11 +52,8 @@ submitREF.addEventListener("click", ()=>{
 })
 
 inquire_apply_btn.addEventListener("click", ()=>{
-
-   
- 
-   loaderMaker();
-   
-
-   
+    let w = window.open('', '', 'height=500,width=500');
+    w.document.write("<video id='video' width='400' height='400' autoplay></video><br /><button onclick='window.close()'>SCAN</button><script src='scanner.js'></script>");
+    w.document.close();
+    w.onbeforeunload = () => loaderMaker();
 })
