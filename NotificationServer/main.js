@@ -3,7 +3,7 @@ const webpush = require("web-push");
 const express = require("express");
 const request = require("request");
 
-const EMAIL = "202110016@feualabang.edu.ph";
+const EMAIL = "XXXXXXXXX@feualabang.edu.ph";
 
 if (!fs.existsSync("priv")) fs.mkdirSync("priv");
 
