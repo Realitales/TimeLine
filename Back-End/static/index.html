@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Push Demo</title>
+    <script type="application/javascript" src="js/client.js"></script>
+  </head>
+
+  <body>
+    Service Worker Demo
+	<iframe name="dummy" style="display:none;"></iframe>
+	<form action="test_notif" method="post" target="votar">
+		<button name="foo" value="upvote">SEND NOTIFICATION</button>
+	</form>
+	
+	
+	<button onclick="addToQueue()">ADD TO CURRENT QUEUE</button>
+	
+	<h1 id="out"></h1>
+
+	<script>
+		const ch = new BroadcastChannel("channel");
+		const out = document.querySelector("#out");
+		
+		ch.onmessage = (e) => {
+			updateView();
+		};
+		
+		function addToQueue() {
+			let count = parseInt(window.localStorage.getItem("queue_count") || 0, 10);
+			window.localStorage.setItem("queue_count", count + 1);
+			
+			ch.postMessage("DUMMY, GO UPDATE!!");
+			
+			updateView();
+		}
+		
+		function updateView() {
+			let count = parseInt(window.localStorage.getItem("queue_count") || 0, 10);
+			out.textContent = "CURRENT QUEUE POSITION " + count;
+		}
+		
+		window.onload = () => updateView();
+	</script>
+  </body>
+</html>
