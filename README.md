@@ -1,9 +1,9 @@
-![](Designs/Logo1_Colored.png)
+<img src="Designs/Logo1_Colored.png" width="512">
 
 # TimeLine
 Saving time by cutting lines - A prototype app / concept developed for Techathon 2022
 
-### Proudly presented to you by Tamaraws of the South (TOTS):
+### Proudly presented to you by the Tamaraws of the South (TOTS):
 
  - Jay Anton R. Rico
  - Joen Ralph S. Boncales
