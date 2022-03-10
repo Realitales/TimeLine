@@ -10,6 +10,16 @@ const body = document.querySelector("body");
 
 const loader = document.createElement("div");
 
+function jumpto(URL){
+  
+    function directing(){
+
+        window.location.href = URL;
+    }
+    setTimeout(directing, 3000);
+
+}
+
 function loaderMaker(){
 
     const div_1stwave = document.createElement("div");
@@ -30,10 +40,10 @@ function loaderMaker(){
     functionHeader.remove();
     for(let i = 0 ; i < 2; i++ )
      loader.appendChild(div_1stwave);
-     loader.appendChild(div_2ndwave);
-
-   
+     loader.appendChild(div_2ndwave);   
 }
+
+
 
 submitREF.addEventListener("click", ()=>{
 

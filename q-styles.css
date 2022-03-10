@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+:root {
+  --mfont: "Fredoka";
+  --goldcolor: #ffb20c;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+@keyframes onload-function-btn {
+  0% {
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes onload-function-header {
+  0% {
+    position: relative;
+    top: -10px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes onload-loader {
+  0% {
+    position: relative;
+    top: 80px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 110px;
+    opacity: 1;
+  }
+}
+
+main {
+  background-image: url(./Designs/BGs/BDO-bg.png);
+  background-size: cover;
+  height: 100vh;
+}
+body {
+  font-family: var(--mfont);
+}
+
+/*Header - Section*/
+header {
+  padding-top: 3em;
+}
+.logo-mainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo-subContainer {
+  display: flex;
+  justify-content: center;
+}
+#logo-TimeLine {
+  width: 9%;
+}
+#logo-BDO {
+  width: 20%;
+  height: auto;
+  margin: 0 0.8em;
+}
+.logo-subContainer > h1 {
+  color: white;
+  font-family: var(--mfont);
+  font-weight: 500;
+  font-size: 1.8rem;
+  position: relative;
+  bottom: 0.2em;
+}
+
+/*shape-wave*/
+.custom-shape-divider-bottom-1646848343 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1646848343 svg {
+  position: relative;
+  display: block;
+  width: calc(285% + 5px);
+  height: 406px;
+  transform: translateX(-250px) rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1646848343 .shape-fill {
+  fill: #ffffff;
+}
+
+/*Special-Logo*/
+#special-timeline-logo > img {
+  width: 100%;
+}
+
+#special-timeline-logo {
+  position: absolute;
+
+  right: 1em;
+  bottom: 0.5em;
+  width: 4em;
+  height: 4em;
+}
+
+/*queue-container*/
+.queue-container {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  margin-top: 3em;
+}
+.queue-container h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.queue-userNumber {
+  display: flex;
+}
+.queue-userNumber-ApproxText {
+  position: absolute;
+  right: 5em;
+  top: 12.5em;
+  text-align: center;
+}
+.queue-userNumber-ApproxText > h1 {
+  font-size: 1rem;
+}
+.queue-userNumber-ApproxText > h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  position: relative;
+  bottom: 1.4em;
+}
+.queue-userNumber-ApproxText > p {
+  font-size: 4rem;
+  position: relative;
+  bottom: 0.2em;
+  color: #ff8585;
+}
+.queue-userNumber-text {
+  text-align: center;
+}
+.queue-userNumber-text > h1 {
+  cursor: pointer;
+}
+#user-number {
+  font-size: 4rem;
+  margin-top: 0.3em;
+}
+#user-number span {
+  font-size: 1rem;
+  position: relative;
+  bottom: 1.3em;
+}
+
+.queue-currentNumber h1 {
+  color: #002bff;
+  cursor: pointer;
+}

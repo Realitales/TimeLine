@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TimeLine</title>
-    <link rel="stylesheet" href="styles.css" />
     <link
       rel="shortcut icon"
       href="./Designs/Logo1_Colored.png"
       type="image/x-icon"
     />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="q-styles.css" />
   </head>
   <body>
     <main class="WebApp-container">
@@ -23,27 +22,23 @@
           </div>
           <img id="logo-BDO" src="./Designs/BDOlogo-textonly(White).png" />
         </div>
-
-        <div class="navbar-hamburger"></div>
       </header>
-      <section class="function-container">
-        <h1 class="function-header">Scan your QR code</h1>
-
-        <div class="function-btn-container">
-          <a onclick="jumpto('q-index.html')" class="function-ia">
-            <div id="function-ia-btn">
-              <img src="./Designs/camera_icon.png" alt="" />
-            </div>
-          </a>
-          <div class="function-reference-container">
-            <h1 class="function-header">For reference number</h1>
-            <input
-              placeholder="Ref. Number"
-              type="text"
-              id="reference-number-input"
-            />
-            <button id="reference-number-submit">Submit</button>
+      <section class="queue-container">
+        <div class="queue-userNumber">
+          <div class="queue-userNumber-text">
+            <h1>Your Number</h1>
+            <p id="user-number"><span>#</span>23</p>
+            <p>Customer No.</p>
           </div>
+
+          <div class="queue-userNumber-ApproxText">
+            <h1>Approx.</h1>
+            <p>25</p>
+            <h2>MINUTES</h2>
+          </div>
+        </div>
+        <div class="queue-currentNumber">
+          <h1>Now serving</h1>
         </div>
       </section>
       <div class="custom-shape-divider-bottom-1646848343">
